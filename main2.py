@@ -10,22 +10,22 @@ arcade.set_background_color(open_color.white)
 # Start the render process. This must be done before any drawing commands.
 arcade.start_render()
 
-face_x,face_y = (0,0)
+face_x,face_y = (50,50)
 
 # Draw the smiley face:
 # (x,y,radius,color)
-arcade.draw_circle_filled(face_x, face_y, 100, open_color.yellow_3)
+arcade.draw_circle_filled(face_x +350 , face_y +270, 100, open_color.yellow_3)
 # (x,y,radius,color,border_thickness)
-arcade.draw_circle_outline(face_x + 0, face_y + 0, 100, open_color.black, 4)
+arcade.draw_circle_outline(face_x + 350, face_y + 270, 100, open_color.black, 4)
 
 #(x,y,width,height,color)
-arcade.draw_ellipse_filled(face_x + 0, face_y + 0, 15, 25, open_color.black)
-arcade.draw_ellipse_filled(face_x + 0, face_y + 0, 15, 25, open_color.black)
-arcade.draw_circle_filled(face_x + 0, face_y + 0, 3, open_color.gray_2)
-arcade.draw_circle_filled(face_x + 0, face_y + 0, 3, open_color.gray_2)
+arcade.draw_ellipse_filled(face_x + 325, face_y + 280, 20, 25, open_color.black)
+arcade.draw_ellipse_filled(face_x + 380, face_y + 280, 20, 25, open_color.black)
+arcade.draw_circle_filled(face_x + 325, face_y + 280, 3, open_color.gray_2)
+arcade.draw_circle_filled(face_x + 380, face_y + 280, 3, open_color.gray_2)
 
 #(x,y,width,height,color,start_degrees,end_degrees,border_thickness)
-arcade.draw_arc_outline(face_x + 0, face_y + 0, 60, 50, open_color.black, 190, 350, 4)
+arcade.draw_arc_outline(face_x + 350, face_y + 245, 60, 50, open_color.black, 190, 350, 4)
 
 
 
